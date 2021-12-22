@@ -774,6 +774,7 @@ h3 {
   background: #FFFFFF;
 border: 1px solid rgba(0, 0, 0, 0.1);
 box-sizing: border-box;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -881,6 +882,7 @@ box-sizing: border-box;
 border-radius: 4px;
 margin-bottom: 10px;
 height: 40px;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   
 }
@@ -888,9 +890,12 @@ height: 40px;
 
 
 .form-field textarea{
+  outline: none;
   width: 100%;
   margin-top: 4px;
   padding: 12px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .agrees{
@@ -969,6 +974,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 margin-top: 30px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .form-button:hover,
@@ -989,6 +995,8 @@ cursor: pointer;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .form-tel{
   display: block;
@@ -1000,6 +1008,8 @@ cursor: pointer;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   
 }
 
@@ -1014,6 +1024,8 @@ cursor: pointer;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .form-field input:focus,
@@ -1024,14 +1036,20 @@ cursor: pointer;
 }
 .form-field input:focus + .icon-name,
 .form-field input:hover + .icon-name{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   fill: #188ce8;
 }
 .form-field input:focus + .icon-tel,
 .form-field input:hover + .icon-tel{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   fill: #188ce8;
 }
 .form-field input:focus + .mail-icon,
 .form-field input:hover + .mail-icon{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   fill: #188ce8;
 }
 
@@ -1040,6 +1058,8 @@ cursor: pointer;
 
 
 }
+
+
 
 .form-field textarea:hover,
 .form-field textarea:focus{
@@ -1052,6 +1072,8 @@ cursor: pointer;
   -moz-appearance: none;
   appearance: none;
   position: absolute;
+ 
+
 } 
 
 .vector-icon{
@@ -1069,6 +1091,7 @@ cursor: pointer;
   fill: var(--white-color);
   background-color: var(--accent-color);
   border: var(--accent-color);
+  
 }
 
 .checkbox-field{
